@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            flowers shop website
+        </title>
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+        <style>
+
+
+            @import url();
+
+            *{
+                    margin:0; padding:0;
+                    box-sizing: border-box;
+                    font-family: Verdana, Geneva, Tahoma, sans-serif;
+            }
+
+            body{
+                display: flex;
+                height: 100vh;
+                justify-content: center;
+                align-items: center;
+                background: linear-gradient(135deg,pink ,rgb(255, 125, 147));
+            }
+
+            .container{
+                max-width: 700px;
+                width: 100%;
+                height: 500px;
+                background:#fff;
+                box-shadow: 1px 1px 5px 3px rgba(0, 0, 0, 0.2);
+                padding: 25px 30px;
+                border-radius: 10px;
+            }
+
+            .container .title{
+                font-size: 25px;
+                font-weight: 500;
+                position: relative;
+              color: rgb(155, 143, 143);
+                
+            }
+
+            .container .title::before{
+                content: '';
+                position: absolute;
+                height: 3px;
+                width: 30px;
+                left: 0;
+                bottom: 0;
+                background: var(pink);
+            }
+
+           /*.container form .user-details{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+          
+           }*/
+
+           form .user-details .input-box{
+            width: calc(100% / 2 - 20px);
+            margin: 20px 0 12px 0;
+           }
+
+           .user-details .input-box .details{
+            display: block;
+                font-weight: 500;
+                margin-bottom: 5px;
+           }
+           
+           .user-details .input-box input{
+            height: 45px;
+            width: 100%;
+            outline: none;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            padding-left: 15px;
+            font-size: 16px;
+            border-bottom-width: 3px;
+            transition: all 0.3s ease;
+           }
+
+         .user-details .input-box input:focus,
+         .user-details .input-box input:valid{
+            border-color: rgb(244, 158, 172);
+         }
+
+         form .gender-details .gender-title{
+            font-size: 20px;
+            font-weight: 500;
+         }
+
+         form .gender-details .category{
+            width: 80%;
+            justify-content: space-between;
+            display: flex;
+            margin: 14px 0;
+         }
+
+         .bottom{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          
+         }
+
+         .btn{
+            width: 240px;
+            height: 40px;
+            background-color: #fff;
+            border: 1px solid rgb(110, 103, 103);
+            font-size: 18px;
+            margin-top: 5px;
+            border-radius: 10px;
+            border-bottom-width: 2px;
+            cursor: pointer;
+            color:pink;
+            transition: 0.4s ease;
+        }
+        
+        .btn:hover{
+            background-color:rgb(252, 196, 205);
+            color:#fff;
+        }
+        
+        .btn a{
+            text-decoration: none;
+            color: rgb(94, 90, 90);
+            font-weight: bold;
+        }
+            img{
+                width: 250px;
+                height: 250px;
+                margin-left: 360px;
+                margin-top: -380px;
+
+                box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.2);
+               
+            }
+
+
+        </style>
+        </head>
+<body>
+
+    <div class="container">
+        <div class="title">
+           <h2> Flower Pot</h2>
+        </div>
+        <form action="#">
+            <div class="user-details">
+            <div class="input-box">
+                <span class="details">Full Name</span>
+                <input type="text" placeholder="Enter your name" required>
+            </div>
+            
+
+         <div class="input-box">
+                <span class="details">Email Address</span>
+                <input type="text" placeholder="Enter your email address" required>
+            </div>
+            <div class="input-box">
+                <span class="details">Phone Number</span>
+                <input type="text" placeholder="Enter your number" required>
+            </div>
+            
+        </div>
+
+                <div class="ppp">
+                    <img src="img-11.jpg">
+                </div>
+
+           
+                
+
+                <div class="gender-details">
+               
+                
+                    <span class="gender-title">Which one do you want to pay with?</span>
+                    <div class="category">
+                        <label for="dot-1">
+                            <input type="radio" name="gender" id="dot-1">
+                            <!--<span class="dot one"></span>-->
+                            <span class="gender">Wave Money</span>
+                        </label>
+                        <label for="dot-2">
+                            <input type="radio" name="gender" id="dot-2">
+                            <!--<span class="dot two"></span>-->
+                            <span class="gender">K pay</span>
+                        </label>
+                        <label for="dot-3">
+                            
+                    <input type="radio" name="gender" id="dot-3">
+                            <!--<span class="dot three"></span>-->
+                            <span class="gender">AYA</span>
+                        </label>
+                    </div>
+                </div>
+                <div class="bottom">
+                    <button class="btn"><a href="flower.html">Submit</a></button>
+    
+                </div>
+               
+            </form>
+
+
+
+</body>
+        </html>
+    
